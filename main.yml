@@ -6,13 +6,13 @@
 
   tasks:
   - name: Install R
-    dnf:
+    yum:
       name: https://cdn.rstudio.com/r/centos-8/pkgs/R-4.0.5-1-1.x86_64.rpm
       state: present
       disable_gpg_check: true
 
   - name: Install RStudio
-    dnf:
+    yum:
       name: https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhel-2022.02.0-443-x86_64.rpm
       state: present
       disable_gpg_check: true
